@@ -1,0 +1,119 @@
+
+* {box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;}
+
+html {
+  scroll-behavior: smooth;}
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;}
+
+header {
+  background: linear-gradient(135deg, #2e8b57, #4caf50);
+  color: white;
+  padding: 100px 40px;
+  text-align: center;}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+
+nav a {
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: bold;
+  transition: color 0.3s ease;}
+
+nav a:hover {
+  color: #1b5e20;
+  text-decoration: underline;}
+
+
+.khung-anh {
+  position: relative;
+  max-width: 100%;}
+
+.khung-anh img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;}
+
+.chu-tren-anh {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 0;}
+
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;}
+
+section h2 {
+  color: #2e8b57;
+  margin-bottom: 15px;}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
+
+.box img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;}
+
+.box a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;}
+
+.box a:hover {
+  text-decoration: underline;}
+
+footer {
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 20px;}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 26px;}
+
+  .chu-tren-anh {
+    font-size: 24px;}
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;}}
+
